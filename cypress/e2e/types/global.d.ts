@@ -1,0 +1,1 @@
+export type MenuItem = 'Ajax Form Submit' | 'Auto Healing' | 'Bootstrap Alerts' | 'Bootstrap Date Picker' | 'Checkbox Demo';
