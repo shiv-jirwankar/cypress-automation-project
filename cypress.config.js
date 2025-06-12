@@ -1,6 +1,6 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from "playwright/test";
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
     baseUrl: "https://www.lambdatest.com/selenium-playground/",
     setupNodeEvents(on, config) {

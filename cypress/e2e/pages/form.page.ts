@@ -1,23 +1,23 @@
 import { BasePage } from "./base.page";
 
 export class FormPage extends BasePage {
-    getNameLabel(): Cypress.Chainable<JQuery<HTMLElement>> {
+    getNameLabel(): Cypress.Chainable {
         return cy.get('form label').first();
     }
 
-    getMessageLabel(): Cypress.Chainable<JQuery<HTMLElement>> {
+    getMessageLabel(): Cypress.Chainable {
         return cy.get('form label').last();
     }
 
-    getNameInput(): Cypress.Chainable<JQuery<HTMLElement>> {
+    getNameInput(): Cypress.Chainable {
         return cy.get('#title');
     }
 
-    getMessageInput(): Cypress.Chainable<JQuery<HTMLElement>> {
+    getMessageInput(): Cypress.Chainable {
         return cy.get('#description');
     }
 
-    getSubmitButton(): Cypress.Chainable<JQuery<HTMLElement>> {
+    getSubmitButton(): Cypress.Chainable {
         return cy.get('#btn-submit');
     }
 }
