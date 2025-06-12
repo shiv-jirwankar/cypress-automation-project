@@ -2,15 +2,29 @@
   "name": "cypressautomation",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "lint": "eslint . --ext .ts"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/cypress": "^0.1.6",
+    "@types/mocha": "^10.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.33.1",
+    "@typescript-eslint/parser": "^8.33.1",
     "cypress": "^13.6.4",
-    "typescript": "^5.8.3"
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-cypress": "^5.1.0",
+    "eslint-plugin-prettier": "^5.4.1",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1"
   }
 }
